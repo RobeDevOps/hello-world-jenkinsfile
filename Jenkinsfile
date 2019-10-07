@@ -1,4 +1,10 @@
-@Library('hello-shared-library@master') _
+library(
+  identifier: 'hello-shared-library@master',
+  retriever: modernSCM([
+    $class: 'GitSCMSource',
+    remote: 'https://github.com/RobeDevOps/hello-shared-library.git'
+  ])
+) _
 
 pipeline {
     agent any
