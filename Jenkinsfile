@@ -2,7 +2,8 @@ library(
   identifier: 'hello-shared-library@master',
   retriever: modernSCM([
     $class: 'GitSCMSource',
-    remote: 'https://github.com/RobeDevOps/hello-shared-library.git'
+    remote: 'git@github.com:RobeDevOps/hello-shared-library.git',
+    credentialsId: 'robedevops'
   ])
 ) _
 
