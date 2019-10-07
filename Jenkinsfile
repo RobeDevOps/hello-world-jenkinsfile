@@ -1,13 +1,4 @@
-// library(
-//   identifier: 'hello-world@master',
-//   retriever: modernSCM([
-//     $class: 'GitSCMSource',
-//     remote: 'git@bitbucket.org:ansiblerobedevops/hello-world.git',
-//     credentialsId: 'rcidevops'
-//   ])
-// )
-
-@Library('rcidevops/hello-world@master') _
+@Library('hello-shared-library@master') _
 
 pipeline {
     agent any
