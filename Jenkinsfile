@@ -3,7 +3,7 @@ library(
   retriever: modernSCM([
     $class: 'GitSCMSource',
     remote: 'git@github.com:RobeDevOps/hello-shared-library.git',
-    credentialsId: 'robedevops'
+    credentialsId: 'github-creds'
   ])
 ) _
 
